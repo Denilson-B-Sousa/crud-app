@@ -58,7 +58,7 @@ public class RemoverProduto extends javax.swing.JFrame {
         );
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        jLabel2.setText("ID :");
+        jLabel2.setText("CODIGO :");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(null));
 
@@ -141,9 +141,9 @@ public class RemoverProduto extends javax.swing.JFrame {
     private void removerProduto() {
         CrudApp crudapp = new CrudApp();
 
-        int id = Integer.parseInt(id_item.getText());
+        int codigo = Integer.parseInt(id_item.getText());
          
-        crudapp.deletarProduto(id);
+        crudapp.deletarProduto(codigo);
     }
     /**
      * @param args the command line arguments
